@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script> </script>
     <title>Sign-Up Page</title>
 </head>
 <body>
@@ -33,32 +34,32 @@
                 <ul>
                     <li>
                         <label for="first-name">FIRST NAME </label>
-                        <input type="text" id="first-name" name="user_first-name" required/>
+                        <input type="text" id="first-name" name="user_first-name" placeholder="Juan" required/>
                         <span></span>
                     </li>
                     <li>
                         <label for="last-name">LAST NAME </label>
-                        <input type="text" id="last-name" name="user_last-name" required/>
+                        <input type="text" id="last-name" name="user_last-name" placeholder="de la Cruz" required/>
                         <span></span>
                     </li>
                     <li>
                         <label for="email">EMAIL</label>
-                        <input type="email" id="email" name="user_email" required/>
+                        <input type="email" id="email" name="user_email" placeholder="jdelacruz@gmail.com" required/>
                         <span></span>
                     </li>
                     <li>
                         <label for="phone-number">PHONE NUMBER</label>
-                        <input type="tel" id="phone-number" name="user_phone-number" required/>
+                        <input type="tel" id="phone-number" name="user_phone-number" pattern="^(09)\d{9}$" minlength="11" maxlength="11" placeholder="09123456789" required/>
                         <span></span>
                     </li>
                     <li>
                         <label for="password">PASSWORD</label>
-                        <input type="password" id="password" name="user_password" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}$/" required/>
+                        <input type="password" id="password" name="user_password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}$" required/>
                         <span></span>
                     </li>
                     <li>
                         <label for="password-confirmation">CONFIRM PASSWORD</label>
-                        <input type="password" id="password-confirmation" name="user_password-confirmation" required/>
+                        <input type="password" id="password-confirmation" name="user_password-confirmation" pattern="/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,12}$/" required/>
                         <span></span>
                     </li>
                 </ul>

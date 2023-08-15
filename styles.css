@@ -95,20 +95,22 @@ section > p {
 }
 
 #form-section-2 ul > li > input[type=password] + span::hidden{
-    content: "Must be 6-12 characters long, have at least 1 uppercase and 1 lower case letter, and 1 digit";
+    content: "Must have 6-12 chars, 1 digit, 1 uppercase and 1 lower case letters."
 }
 
 form input {
+    height: 30px;
     width: 100%;
-    border-width: 2px;
-    border-radius: 3px;
+    font-size: 13px;
+    padding: 1px 1px 1px 5px;
+    border: 1px solid #777777;
 }
 
 form input[type="text"]:valid,
 form input[type="email"]:valid,
 form input[type="tel"]:valid,
 form input[type="password"]:valid {
-    border: solid #28a745;
+    border: 1px solid #28a745;
 }
 
 form button {
