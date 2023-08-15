@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    flex-shrink: 0;
 }
 
 body {
@@ -25,6 +28,21 @@ body {
 
 .main-left-column > #logo-container {
     top: 10%;
+
+    height: 50px;
+
+    background-color: #000000;
+    opacity: 1;
+}
+
+.main-left-column > #logo-container > img {
+    height: 100%;
+}
+
+.main-left-column > #logo-container > #logo-name {
+    font-family: Tektur;
+    font-weight: bold;
+    font-size: xx-large;
 }
 
 .main-left-column > #photo-credits {
@@ -50,6 +68,12 @@ body {
     line-height: 1.2;
 }
 
+section > p {
+    margin-top: 1ch;
+    margin-bottom: 1ch;
+    line-height: (1.25)rem;
+}
+
 #form-section-2 {
     width: inherit;
     background-color: #BDE8F3;
@@ -70,12 +94,42 @@ body {
     flex-wrap: wrap;
 }
 
-input {
-    width: 100%;
+#form-section-2 ul > li > input[type=password] + span::hidden{
+    content: "Must be 6-12 characters long, have at least 1 uppercase and 1 lower case letter, and 1 digit";
 }
 
-button {
-    width: 150px;
+form input {
+    width: 100%;
+    border-width: 2px;
+    border-radius: 3px;
+}
+
+form input[type="text"]:valid,
+form input[type="email"]:valid,
+form input[type="tel"]:valid,
+form input[type="password"]:valid {
+    border: solid #28a745;
+}
+
+form button {
+    font-size: 16px;
+    font-weight: bold;
+  
+    color: #FFFFFF;
+    background-color: #5995DA;
+
+    border: none;
+    border-radius: 3px;
+  
+    padding: 10px 30px;
+}
+
+form button:hover {
+    background-color: #76AEED;
+}
+
+form button:active {
+    background-color: #407FC7;
 }
 
 
