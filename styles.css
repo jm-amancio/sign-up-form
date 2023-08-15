@@ -20,33 +20,33 @@ body {
     background-position: center;
 }
 
-.main-left-column > * {
-    width: inherit;
-    position: absolute;
-    text-align: center;
-}
-
 .main-left-column > #logo-container {
-    top: 10%;
+    width: inherit;
+    height: 2.5rem;
 
-    height: 50px;
-
+    position: absolute;
+    top: 8rem;
+    
     background-color: #000000;
-    opacity: 1;
-}
+    opacity: 0.6;
 
-.main-left-column > #logo-container > img {
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 3px;
 }
 
 .main-left-column > #logo-container > #logo-name {
+    text-align: center;
+    color: #FFFFFF;
     font-family: Tektur;
     font-weight: bold;
     font-size: xx-large;
 }
 
 .main-left-column > #photo-credits {
+    position: absolute;
     bottom: 0;
+    text-align: center;
 }
 
 .main-right-column {
